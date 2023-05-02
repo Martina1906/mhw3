@@ -1,0 +1,272 @@
+body{
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:black;
+    margin: 0;
+}
+
+header{
+    height: 500px;
+    display: flex;
+    background-image: url(Sfondo.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#overlay{
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+
+header nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15%;
+
+
+}
+
+#links a{
+    margin: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#links a:hover{
+    font-weight: lighter;
+    background-color: red;
+
+}
+
+#Info{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #9c9c9c;
+
+}
+
+#Info h1{
+    color: red;
+    text-decoration: solid;
+    font-family: fantasy;
+    font-size: 60px;
+    margin-bottom: -10px;
+
+}
+
+#Info p{
+    font-size: 30px;
+    font-family: cursive;
+    margin-top: -5px;
+
+}
+
+#loghi{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+#loghi img{
+    width: 70px;
+    height: 70px;
+}
+
+section{
+    display: flex;
+    background-color: #9c9c9c;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    
+    
+}
+
+
+
+#frasi{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+
+#frasi p{
+    font-size: 10px;
+    margin-top: -1px;
+}
+
+#frasi img{
+    height: 250px;
+    width: 250px;
+}
+
+#frasi button{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.hidden{
+    display: none;
+}
+
+#result{
+    border: 2px solid red;
+    background-color: azure;
+    margin-bottom: 30px;
+}
+
+#result h1{
+    color: red;
+    font-style: oblique;
+    font-family: fantasy;
+    font-weight: 2px;
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+#result p{
+    font-size: 25px;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+    
+}
+
+
+
+#film{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+#film img{
+    height: 250px;
+    width: 250px;
+}
+
+#film a{
+    font-size: 25px;
+    color: white;
+}
+
+#film a:hover{
+    
+    background-color: red;
+
+}
+
+#testo{
+    display: flex;
+    text-align: center;
+    background-color: #9c9c9c;
+    
+
+
+}
+
+#testo h1{
+    color: red;
+    font-family: 'Bruno Ace', sans-serif;
+    font-size: larger;
+    text-decoration: underline;
+    font-size: 30px;
+    
+}
+
+#locandine{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #9c9c9c;
+    justify-content: space-between;
+    
+   
+}
+
+#locandine div{
+    box-sizing: border-box;
+    width: 25%;
+    height: 25%;
+    border: 1px solid #dcdcdc;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+    
+}
+
+#locandine img{
+   width: 100%;
+}
+
+#locandine h1{
+    font-size: 15px;
+    text-decoration: underline;
+
+}
+
+#locandine a{
+    color: blue;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    
+}
+
+footer{
+    display: flex;
+    height: 100px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+    background-color: black;
+}
+
+footer span{
+    text-align: center;
+    color: rgba(255, 255, 255, .4);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@media (max-width: 700px){
+    #links{
+        display: none;
+    }
+    #menu{
+        display: block;
+    }
+}
